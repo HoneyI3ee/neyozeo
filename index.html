@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeo Neyo Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <!-- Modern Formal Theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  
+  <style>
+    /* 1. Universal Background (Works on Mobile & Desktop) */
+    body {
+      background-image: url('back.png'); /* CHANGE THIS to your exact PNG name */
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* 2. Content "Card" - Makes text readable on any background */
+    .content {
+      background: rgba(30, 26, 49, 0.93); /* Semi-transparent blueish grey */
+      padding: 30px !important;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      margin-top: 20px;
+    }
+
+    /* 3. Formal Sidebar */
+    .sidebar {
+      background-color: rgba(4, 1, 13, 0.95);
+    }
+
+    /* Mobile adjustments */
+    @media screen and (max-width: 768px) {
+      .content {
+        margin: 10px;
+        padding: 15px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'About Me',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: 'auto',
+      auto2top: true // Scrolls to top when changing pages (Great for ADHD focus)
+    }
+  </script>
+  <!-- Essential Scripts -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+</body>
+</html>

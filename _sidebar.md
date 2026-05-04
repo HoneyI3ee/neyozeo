@@ -1,0 +1,5 @@
+* [Welcome Little Heathens](README.md)
+* [About Me](about.md)
+* [My Projects](projects.md)
+* [Socials](socials.md)
+* [Credits](credit.md)
