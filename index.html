@@ -30,9 +30,18 @@
     /* 3. Formal Sidebar */
     .sidebar {
       background-color: rgba(4, 1, 13, 0.95);
+      border-right: 1px solid rgba(255,255,255,0.08);
+      color: #d8dcf9;
     }
 
-    /* Mobile adjustments */
+    .sidebar a {
+      color: #d8dcf9;
+    }
+
+    .sidebar a:hover {
+      color: #ffffff;
+    }
+
     @media screen and (max-width: 768px) {
       .content {
         margin: 10px;
@@ -45,22 +54,15 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'About Me',
+      name: 'Zeo Neyo Wiki',
       loadSidebar: true,
-      subMaxLevel: 2,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      subMaxLevel: 3,
       search: 'auto',
-      auto2top: true // Scrolls to top when changing pages (Great for ADHD focus)
+      auto2top: true
     }
-  window.$docsify = {
-    name: 'Zeo Neyo Wiki',
-    loadSidebar: true,
-    alias: {
-      '/.*/_sidebar.md': '/_sidebar.md' // This helps if you have folders
-    },
-    subMaxLevel: 3, // Changed from 2 to 3 to show more sub-headers!
-    search: 'auto',
-    auto2top: true
-  }
   </script>
   <!-- Essential Scripts -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
