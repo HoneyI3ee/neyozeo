@@ -51,6 +51,16 @@
       search: 'auto',
       auto2top: true // Scrolls to top when changing pages (Great for ADHD focus)
     }
+  window.$docsify = {
+    name: 'Zeo Neyo Wiki',
+    loadSidebar: true,
+    alias: {
+      '/.*/_sidebar.md': '/_sidebar.md' // This helps if you have folders
+    },
+    subMaxLevel: 3, // Changed from 2 to 3 to show more sub-headers!
+    search: 'auto',
+    auto2top: true
+  }
   </script>
   <!-- Essential Scripts -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
