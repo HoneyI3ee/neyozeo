@@ -53,10 +53,11 @@
 <body>
   <div id="app"></div>
   <script>
+    var docsifyBasePath = window.location.pathname.indexOf('/neyozeo/') === 0 ? '/neyozeo/' : '/';
     window.$docsify = {
       name: 'Zeo Neyo Wiki',
       loadSidebar: true,
-      basePath: '/neyozeo/',
+      basePath: docsifyBasePath,
       alias: {
         '/.*/_sidebar.md': '/_sidebar.md'
       },
