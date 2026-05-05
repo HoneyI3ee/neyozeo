@@ -2,10 +2,8 @@
   * [🏠 Home](/)
 
 * **👤 About Me**
-  * [Who I Am](About.md)
-  * [My Skills](Skills.md)
-  * [My Story](Story.md)
+  * [Who I Am](about.md)
 
 * **📂 Work**
-  * [Projects](Projects.md)
-  * [Socials](Socials.md)
+  * [Projects](project.md)
+  * [Socials](socials.md)
