@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Open Local Site",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://127.0.0.1:5501",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}

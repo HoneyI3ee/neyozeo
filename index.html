@@ -54,17 +54,13 @@
   <div id="app"></div>
   <script>
     var docsifyBasePath = window.location.pathname.indexOf('/neyozeo/') === 0 ? '/neyozeo/' : '/';
-    window.$docsify = {
-      name: 'Zeo Neyo Wiki',
-      loadSidebar: true,
-      basePath: docsifyBasePath,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      subMaxLevel: 3,
-      search: 'auto',
-      auto2top: true
-    }
+
+  window.$docsify = {
+  name: 'Zeo Neyo Wiki',
+  loadSidebar: '_sidebar.md', // Change 'true' to the actual filename in quotes
+  // ... keep everything else the same
+}
+  
   </script>
   <!-- Essential Scripts -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
