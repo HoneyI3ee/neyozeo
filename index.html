@@ -50,19 +50,27 @@
     }
   </style>
 </head>
+
 <body>
   <div id="app"></div>
+  
   <script>
+    // This part helps Docsify find your folder if you're on GitHub Pages
     var docsifyBasePath = window.location.pathname.indexOf('/neyozeo/') === 0 ? '/neyozeo/' : '/';
 
-  window.$docsify = {
-  name: 'Zeo Neyo Wiki',
-  loadSidebar: '_sidebar.md', // Change 'true' to the actual filename in quotes
-  // ... keep everything else the same
-}
-  
+    window.$docsify = {
+      name: 'Zeo Neyo Wiki',
+      basePath: docsifyBasePath,
+      loadSidebar: true, // Docsify looks for _sidebar.md by default
+      subMaxLevel: 3,
+      auto2top: true,
+      search: 'auto',
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md' // This is the "Safety Net"
+      }
+    }
   </script>
-  <!-- Essential Scripts -->
+
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 </body>
